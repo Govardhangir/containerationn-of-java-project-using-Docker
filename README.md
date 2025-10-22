@@ -1,119 +1,141 @@
-🐳 Containerization of Java Project using Docker
+# 🐳 Containerization of Java Project using Docker
 
-This project demonstrates how a Java application can be containerized using Docker, enabling it to run consistently across any environment — from local systems to production servers.
+This project demonstrates how a **Java application** can be **containerized using Docker**, enabling it to run consistently across any environment — from local systems to production servers.  
 
-📘 Table of Contents
+It focuses on the **concept, architecture, and practical steps** of containerization.
 
-Overview
+---
 
-Project Objective
+## 📘 Table of Contents
 
-Architecture
+- [Overview](#overview)
+- [Project Objective](#project-objective)
+- [Architecture](#architecture)
+- [Project Flow](#project-flow)
+- [Technologies Used](#technologies-used)
+- [Outputs](#outputs)
+- [Key Takeaways](#key-takeaways)
+- [Author](#author)
 
-Project Flow
+---
 
-Technologies Used
+## 🧩 Overview
 
-Outputs
+Java applications often face **“works on my machine”** issues due to environment inconsistencies.  
+Docker solves this by packaging applications with their **runtime, dependencies, and libraries** inside lightweight containers.
 
-Key Takeaways
+This project demonstrates how a Java application can be:
 
-Author
+1. Built into a Docker image  
+2. Tested in an isolated container environment  
+3. Shared via **Docker Hub** for universal access  
 
-🧩 Overview
+---
 
-Java applications often face “works on my machine” issues due to environment inconsistencies.
-Docker solves this by packaging applications with their runtime, dependencies, and libraries inside lightweight containers.
+## 🎯 Project Objective
 
-This project shows how a Java application can be:
+- Learn **containerization** for Java applications  
+- Ensure **consistent deployments** across environments  
+- Simplify integration with **CI/CD pipelines**  
+- Understand **Docker architecture and image lifecycle**  
 
-Built into a Docker image
+---
 
-Tested in an isolated container environment
+## 🏗️ Architecture
 
-Shared via Docker Hub for universal access
+The containerization workflow has three main stages:
 
-🎯 Project Objective
+### 🔹 1. Source Stage
+- Prepare Java project source files (`Main.java`, `pom.xml`)  
+- Write a **Dockerfile** to define the base image and build process  
 
-Learn containerization for Java applications
+### 🔹 2. Build Stage
+- Use Docker to build an image with a Java base (e.g., `openjdk:11`)  
+- Compile and package the source code into a runnable `.jar`  
 
-Ensure consistent deployments across environments
+### 🔹 3. Test & Deployment Stage
+- Run the application inside a container to verify functionality  
+- Push the verified image to **Docker Hub**  
 
-Simplify integration with CI/CD pipelines
+📊 **Architecture Diagram**  
 
-Understand Docker architecture and image lifecycle
-
-🏗️ Architecture
-
-The containerization workflow has three stages:
-
-1. Source Stage
-
-Prepare Java project source files (Main.java, pom.xml)
-
-Write a Dockerfile to define the base image and build process
-
-2. Build Stage
-
-Use Docker to build an image with a Java base (e.g., openjdk:11)
-
-Compile and package the source code into a runnable .jar
-
-3. Test & Deployment Stage
-
-Run the application inside a container to verify functionality
-
-Push the verified image to Docker Hub
-
-📊 Architecture Diagram:
-
-
-⚙️ Project Flow
- Java Source Code
+```text
+Java Source Code
         │
         ▼
-  Dockerfile Created
+   Dockerfile Created
         │
         ▼
-  Docker Image Built
+   Docker Image Built
         │
         ▼
- Container Runs the App
+Container Runs the App
         │
         ▼
-  Image Stored on Docker Hub
+ Image Stored on Docker Hub
+```
+## 🧠 Technologies Used
 
-🧠 Technologies Used
-Tool / Technology	Purpose
-Java (OpenJDK 11)	Application runtime and code execution
-Docker	Containerization platform
-Dockerfile	Image build blueprint
-Docker Compose	Multi-container orchestration
-Docker Hub	Registry for hosting and sharing images
-🧾 Outputs
-Stage	Description	Result
-Source	Java project with Dockerfile prepared	✅ Ready for build
-Build	Docker image created with Java app	✅ Portable image generated
-Test	App runs successfully inside container	✅ Functional verification
-Deployment	Image uploaded to Docker Hub	✅ Globally accessible
+| Tool / Technology     | Purpose                                   |
+| --------------------- | ----------------------------------------- |
+| **Java (OpenJDK 11)** | Application runtime and code execution    |
+| **Docker**            | Platform for containerization             |
+| **Dockerfile**        | Blueprint to build the image              |
+| **Docker Compose**    | Orchestrates multi-container environments |
+| **Docker Hub**        | Registry for hosting and sharing images   |
 
-📸 Project Output:
+---
 
+## 🧾 Outputs
 
-💡 Key Takeaways
+After successful containerization, the following outputs were obtained:
 
-Docker ensures environment consistency across dev, test, and prod
+| Stage          | Description                            | Result                     |
+| -------------- | -------------------------------------- | -------------------------- |
+| **Source**     | Java project with Dockerfile prepared  | ✅ Ready for build          |
+| **Build**      | Docker image created with Java app     | ✅ Portable image generated |
+| **Test**       | App runs successfully inside container | ✅ Functional verification  |
+| **Deployment** | Image uploaded to Docker Hub           | ✅ Globally accessible      |
 
-Java apps become portable, reproducible, and scalable
+📸 **Project Output:**  
+*(Upload your output screenshot in the repo and replace the link below)*  
+![Output](images/output.png)
 
-Ideal for CI/CD pipelines and cloud-native development
+---
 
-Simplifies team collaboration
+## 💡 Key Takeaways
 
-Reduces onboarding time for new developers
+- Docker ensures **environment consistency** across development, testing, and production.  
+- Java applications become **portable, reproducible, and scalable**.  
+- Ideal for **DevOps CI/CD pipelines** and cloud-native development.  
+- Simplifies **collaboration** by maintaining uniform environments for all team members.  
+- Reduces onboarding time for new developers.  
 
-👨‍💻 Author
+---
 
-Giri
-📍 DevOps & Cloud Enthusiast
-🔗 GitHub Profile
+## 🧱 Conclusion
+
+This project successfully demonstrates the **containerization of a Java application using Docker**, highlighting how easily a traditional Java app can be packaged, shipped, and deployed in a consistent environment.  
+
+By using Docker:
+- The Java app becomes **platform-independent**.  
+- Deployment time is significantly reduced.  
+- The same container image can run across **development, staging, and production** environments without modification.  
+
+This hands-on implementation forms a **foundation for integrating CI/CD tools** like Jenkins or GitHub Actions, enabling complete automation in future DevOps pipelines.
+
+---
+
+## 👨‍💻 Author
+
+**Giri**  
+📍 *DevOps & Cloud Enthusiast*  
+🔗 [GitHub Profile](https://github.com/<your-username>)
+
+---
+
+> 💬 *Tip:*  
+> You can further enhance this README by adding:
+> - Folder structure (`src/`, `target/`, `Dockerfile`, etc.)  
+> - Commands to build, run, and push images  
+> - A section for “Future Enhancements” (like adding Jenkins CI/CD integration)
