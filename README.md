@@ -99,7 +99,7 @@ After successful containerization, the following outputs were obtained:
 
 📸 **Project Output:**  
 *(Upload your output screenshot in the repo and replace the link below)*  
-![Output](images/output.png)
+![Output](containerationn-of-java-project-using-Docker/Screenshot.png)
 
 ---
 
