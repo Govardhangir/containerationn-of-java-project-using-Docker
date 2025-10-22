@@ -124,16 +124,4 @@ This hands-on implementation forms a **foundation for integrating CI/CD tools** 
 
 ---
 
-## 👨‍💻 Author
 
-**Giri**  
-📍 *DevOps & Cloud Enthusiast*  
-🔗 [GitHub Profile](https://github.com/<your-username>)
-
----
-
-> 💬 *Tip:*  
-> You can further enhance this README by adding:
-> - Folder structure (`src/`, `target/`, `Dockerfile`, etc.)  
-> - Commands to build, run, and push images  
-> - A section for “Future Enhancements” (like adding Jenkins CI/CD integration)
