@@ -97,9 +97,7 @@ After successful containerization, the following outputs were obtained:
 | **Test**       | App runs successfully inside container | ✅ Functional verification  |
 | **Deployment** | Image uploaded to Docker Hub           | ✅ Globally accessible      |
 
-📸 **Project Output:**  
-*(Upload your output screenshot in the repo and replace the link below)*  
-![Output](containerationn-of-java-project-using-Docker/Screenshot 2025-10-16 194406.png) 
+
 
 ---
 
